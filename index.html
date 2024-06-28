@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>CHATCLONE-V1</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head> 
+<body> 
+    <div class="header"> 
+        <i class="fas fa-arrow-left back-icon"></i> 
+        <div class="profile-pic" style="background-image: url('https://raw.githubusercontent.com/DzarelDeveloper/CHATCLONE-V1/main/Profile.jpg');"></div>
+        <div class="user-info"> 
+            <p class="username">Mimin Ganteng</p> 
+            <p class="status">Online</p> 
+        </div> 
+        <div class="header-icons"> 
+            <i class="fas fa-video header-icon"></i> 
+            <i class="fas fa-phone header-icon"></i> 
+            <i class="fas fa-ellipsis-v header-icon" onclick="toggleDropdown()"></i> 
+            <div id="dropdownMenu" class="dropdown-menu">
+                <a href="#">Lihat Kontak</a>
+                <a href="#">Media, tautan, dan dok</a>
+                <a href="#">Cari</a>
+                <a href="#">Bisukan notifikasi</a>
+                <a href="#">Pesan Sementara</a>
+                <a href="#">Wallpaper</a>
+                <a href="#">Lainnya</a>
+            </div>
+        </div>
+    </div> 
+    <div class="chat-container"> 
+        <div class="encryption-message"> 
+            <span>🔒 Pesan dan panggilan dienkripsi secara end-to-end. Tidak seorang pun di luar chat ini, termasuk WhatsApp, yang dapat membaca atau mendengarkannya. Ketuk untuk info selengkapnya.</span> 
+        </div> 
+        <div class="timestamp">Hari ini</div> 
+        <div class="message sent">
+            Halo Mimin👋<span class="time">22:21</span> 
+        </div> 
+        <div class="message received">
+            Halo Juga<span class="time">22:21</span> 
+        </div> 
+    </div> 
+    <div class="footer"> 
+        <i class="far fa-smile icon"></i> 
+        <input type="text" placeholder="Ketik pesan"> 
+        <i class="fas fa-paperclip icon" onclick="toggleAttachMenu()"></i> 
+        <button><i class="fas fa-microphone"></i></button> 
+    </div> 
+    <div id="attachMenu" class="attach-menu">
+        <div class="attach-row">
+            <div class="attach-item"><i class="fas fa-image"></i> Galeri</div>
+            <div class="attach-item"><i class="fas fa-camera"></i> Kamera</div>
+            <div class="attach-item"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+        </div>
+        <div class="attach-row">
+            <div class="attach-item"><i class="fas fa-user"></i> Kontak</div>
+            <div class="attach-item"><i class="fas fa-file"></i> Dokumen</div>
+            <div class="attach-item"><i class="fas fa-headphones"></i> Audio</div>
+        </div>
+        <div class="attach-row">
+            <div class="attach-item"><i class="fas fa-poll"></i> Polling</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
